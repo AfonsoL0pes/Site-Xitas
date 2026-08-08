@@ -101,36 +101,18 @@ ul {
 }
 
 /* ==========================================================================
-   CABEÇALHO TRANSPARENTE E FLUTUANTE
+   CABEÇALHO (NAVBAR)
    ========================================================================== */
 .navbar {
   position: absolute;
-  /* O segredo está aqui: faz o menu flutuar sobre a foto */
+  /* Para ficar por cima do Hero */
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 0;
-  z-index: 1000;
-  background-color: transparent;
-}
-
-/* ==========================================================================
-   IMAGEM DE TOPO DAS PÁGINAS INTERNAS
-   ========================================================================== */
-.hero-internal {
-  position: relative;
-  height: 60vh;
-  /* Um pouco mais alto para compensar o menu */
-  background-size: cover;
-  background-position: center top;
-  /* Garante que a foto alinha pelo topo */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 80px;
-  /* Empurra o texto (A Nossa Essência) para baixo, para não chocar com o logótipo */
-  margin-top: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  color: var(--white);
 }
 
 .nav-container {
