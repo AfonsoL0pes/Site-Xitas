@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quinta dos Avós Lourenço · Alojamento Rural na Sertã</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts para Tipografia Elegante -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- Header / Navegação Fixo e Centrado -->
+  <header class="navbar" style="position: relative;">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-title">QUINTA DOS<br>AVÓS LOURENÇO</span>
+        <span class="brand-sub">SERTÃ · PORTUGAL · DESDE 1853*</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="#a-quinta">A Quinta*</a>
+        <a href="#o-alojamento">O Alojamento</a>
+        <a href="#pet-friendly">Pet-Friendly</a>
+        <a href="#os-anfitrioes">Os Anfitriões</a>
+        <a href="#experiencias">Sertã & Experiências</a>
+        <a href="#reservar" class="btn-primary">Reservar Direto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section com Vídeo / Imagem de Fundo -->
+  <section class="hero"
+    style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url('images/galeria1.webp');">
+    <div class="hero-content">
+      <span class="hero-tag">Turismo Rural & Natureza</span>
+      <h1>O Teu Refúgio Autêntico no Coração da Beira</h1>
+      <p>Tradição, conforto e a tranquilidade de 3 hectares de natureza para toda a família (incluindo os patudos).</p>
+      <div class="hero-buttons">
+        <a href="#booking-bar" class="btn-gold">Verificar Disponibilidade</a>
+        <a href="#quinta" class="btn-outline">Explorar a Quinta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Booking Bar (Barra de Reserva Direta) -->
+  <div id="booking-bar" class="booking-bar">
+    <form class="booking-form" onsubmit="event.preventDefault(); alert('A redirecionar para o motor de reservas...');">
+      <div class="form-group">
+        <label for="checkin">CHECK-IN</label>
+        <input type="date" id="checkin" required>
+      </div>
+      <div class="form-group">
+        <label for="checkout">CHECK-OUT</label>
+        <input type="date" id="checkout" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">HÓSPEDES</label>
+        <select id="guests">
+          <option value="2">2 Hóspedes</option>
+          <option value="3">3 Hóspedes</option>
+          <option value="4">4 Hóspedes</option>
+          <option value="5+">5+ Hóspedes</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="pets">ANIMAIS</label>
+        <select id="pets">
+          <option value="0">Sem animais</option>
+          <option value="1">1 Cão / Gato</option>
+          <option value="2+">2 ou mais patudos</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-search">Procurar Datas</button>
+    </form>
+  </div>
+
+  <!-- Prova Social & Avaliações -->
+  <section class="ratings-strip">
+    <div class="container ratings-container">
+      <div class="rating-item">
+        <span class="rating-score">4,96 ★</span>
+        <span class="rating-label">+50 Avaliações no Airbnb</span>
+      </div>
+      <div class="rating-divider"></div>
+      <div class="rating-item">
+        <span class="rating-score">9,8 / 10</span>
+        <span class="rating-label">Excecional no Booking.com</span>
+      </div>
+      <div class="rating-divider"></div>
+      <div class="rating-item">
+        <span class="rating-score">🥖 Pão Quente</span>
+        <span class="rating-label">Entregue no portão todas as manhãs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secção Pousada dos Patudos (Foco Pet-Friendly) -->
+  <section id="pet-friendly" class="section-padding pet-section">
+    <div class="container grid-2">
+      <div class="pet-image">
+        <img src="images/galeria10.webp" alt="Espaço exterior Pet-Friendly na Quinta dos Avós Lourenço">
+        <span class="pet-badge">100% Espaço Vedado & Seguro</span>
+      </div>
+      <div class="pet-text">
+        <span class="sub-title">FÉRIAS SEM DEIXAR NINGUÉM PARA TRÁS</span>
+        <h2>A Pousada dos Teus Patudos</h2>
+        <p>Sabemos que os animais fazem parte da família. Na Quinta dos Avós Lourenço, o teu cão ou gato tem 3 hectares
+          para explorar em total segurança num perímetro vedado.</p>
+        <ul class="pet-features">
+          <li>🐾 **Terreno totalmente vedado** para correr livremente</li>
+          <li>🥣 Taças de água, comida e camas confortáveis disponíveis</li>
+          <li>🌊 Praias fluviais amigas dos cães a poucos minutos de distância</li>
+          <li>🩺 Contato de veterinário local disponível 24/7</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secção Storytelling: Anfitriões de 4 Patas -->
+  <section id="animais" class="section-padding bg-light">
+    <div class="container text-center">
+      <span class="sub-title">VIDA DE QUINTA</span>
+      <h2>Conhece os Nossos Anfitriões Residentes</h2>
+      <p class="section-desc">Além da hospitalidade humana, a quinta é a casa de amigos muito especiais que adoram
+        receber festas.</p>
+
+      <div class="grid-3 card-grid">
+        <div class="animal-card">
+          <div class="animal-avatar">🫏</div>
+          <h3>Uva</h3>
+          <p class="animal-role">O Burro Amigável</p>
+          <p>Adora cenouras, mimos nas orelhas e cumprimentar os hóspedes logo pela manhã.</p>
+        </div>
+        <div class="animal-card">
+          <div class="animal-avatar">🐖</div>
+          <h3>Elvis</h3>
+          <p class="animal-role">O Porco Curioso</p>
+          <p>Sempre animado a explorar a vegetação e a apanhar banhos de sol nas sesta da tarde.</p>
+        </div>
+        <div class="animal-card">
+          <div class="animal-avatar">🐷</div>
+          <h3>Shakira</h3>
+          <p class="animal-role">A Estrela da Quinta</p>
+          <p>A companheira inseparável do Elvis. Garantia de momentos divertidos para as crianças.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guia Local da Sertã -->
+  <section id="experiencias" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title">DESCUBRA O CENTRO DE PORTUGAL</span>
+        <h2>Sertã: Praias Fluviais e Gastronomia</h2>
+      </div>
+      <div class="grid-3 guide-grid">
+        <div class="guide-card">
+          <h3>🌊 Praias Fluviais escondidas</h3>
+          <p>Mergulha nas águas puras do Traguntil, Perais e Troviscal a poucos minutos da quinta.</p>
+        </div>
+        <div class="guide-card">
+          <h3>🍲 Gastronomia Tradicional</h3>
+          <p>Saboreia o autêntico Maranho e Bucho recheado nos melhores restaurantes típicos da vila.</p>
+        </div>
+        <div class="guide-card">
+          <h3>🥾 Trilhos & Miradouros</h3>
+          <p>Percursos pedestres pela Serra da Sertã com paisagens panorâmicas inspiradoras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Widget Flutuante WhatsApp -->
+  <a href="https://wa.me/351000000000" class="whatsapp-btn" target="_blank" rel="noopener">
+    💬 Falar pelo WhatsApp
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 Quinta dos Avós Lourenço · RNT 135447/AL</p>
+      <div class="footer-links">
+        <a href="cookies/index.html">Cookies</a>
+        <a href="contactos/index.html">Contactos</a>
+        <a href="https://www.livroreclamacoes.pt" target="_blank">Livro de Reclamações</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
