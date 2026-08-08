@@ -119,17 +119,17 @@ ul {
    ========================================================================== */
 .hero-internal {
   position: relative;
-  height: 65vh;
-  /* Aumentado ligeiramente para dar mais espaço à fotografia */
+  height: 60vh;
+  /* Um pouco mais alto para compensar o menu */
   background-size: cover;
-  background-position: center center;
-  /* Centra a foto na vertical e horizontal, descendo o topo */
+  background-position: center top;
+  /* Garante que a foto alinha pelo topo */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 130px;
-  /* O SEGREDO: Empurra o texto bem para baixo, afastando-o do menu */
+  padding-top: 80px;
+  /* Empurra o texto (A Nossa Essência) para baixo, para não chocar com o logótipo */
   margin-top: 0;
 }
 
