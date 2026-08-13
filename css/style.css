@@ -2,9 +2,9 @@
    VARIÁVEIS DE COR E TIPOGRAFIA
    ========================================================================== */
 :root {
-  --primary-color: #335544;
+  --primary-color: #646464;
   /* Verde Oliveira Escuro */
-  --accent-color: #D4AF37;
+  --accent-color: #db0000;
   /* Dourado/Mostarda Rústico */
   --text-dark: #2C2C2C;
   --text-muted: #666666;
@@ -351,7 +351,7 @@ ul {
 .rating-score {
   font-family: var(--font-head);
   font-size: 1.8rem;
-  color: var(--accent-color);
+  color: var(--white);
   margin-bottom: 5px;
 }
 
@@ -374,8 +374,17 @@ ul {
   position: relative;
 }
 
+/* ==========================================================================
+   AJUSTE DA IMAGEM PET-FRIENDLY (Cortar o céu e focar na base)
+   ========================================================================== */
 .pet-image img {
-  width: 100%;
+  width: 50%;
+  height: 10%;
+  /* Define uma altura mais compacta e elegante */
+  object-fit: cover;
+  /* Garante que a imagem preenche o espaço sem distorcer */
+  object-position: center bottom;
+  /* O segredo: Foca na parte de baixo da foto e corta o céu */
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   display: block;
@@ -384,7 +393,7 @@ ul {
 .pet-badge {
   position: absolute;
   bottom: -20px;
-  right: -20px;
+  right: 100px;
   background-color: var(--primary-color);
   color: var(--white);
   padding: 15px 25px;
@@ -611,7 +620,7 @@ ul {
 
 .feature-image img,
 .pet-image img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   /* Esta é a regra mágica: corta a imagem para preencher sem distorcer */
