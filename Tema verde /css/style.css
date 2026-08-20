@@ -2,9 +2,9 @@
    VARIÁVEIS DE COR E TIPOGRAFIA
    ========================================================================== */
 :root {
-  --primary-color: #646464;
+  --primary-color: #2E5A36;
   /* Verde Oliveira Escuro */
-  --accent-color: #db0000;
+  --accent-color: #8B5A2B;
   /* Dourado/Mostarda Rústico */
   --text-dark: #2C2C2C;
   --text-muted: #666666;
@@ -15,7 +15,7 @@
   --font-head: 'Marcellus', serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 
-  --transition: all 0.3s ease;
+  --transition: all 0.2s ease;
 }
 
 /* ==========================================================================

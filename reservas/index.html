@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservas · Quinta dos Avós Lourenço | Alojamento Rural na Sertã</title>
+  <meta name="description" content="Reserve a sua estadia na Quinta dos Avós Lourenço — alojamento rural na Sertã. Verifique preços, disponibilidade e faça o seu pedido de reserva.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="index.html">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Favicons -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+  <!-- (opcional) perf: preconnect para o GA -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+
+  <!-- CSP única (GA + Formspree permitidos) -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://www.googletagmanager.com 'unsafe-inline';
+    style-src  'self' 'unsafe-inline';
+    img-src    'self' data: https://www.google-analytics.com;
+    font-src   'self' data:;
+    connect-src 'self' https://formspree.io https://www.google-analytics.com https://www.googletagmanager.com;
+    base-uri   'self';
+    form-action 'self' https://formspree.io;
+    upgrade-insecure-requests;
+  ">
+
+  <!-- Google tag (gtag.js) - deve ficar no <head> -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS7FTWGPQX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-JS7FTWGPQX');
+  </script>
+  
+  <!-- Estilos apenas para o simulador (não mexem no resto do site) -->
+  <style>
+    .simulador{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px;box-shadow:0 6px 16px rgba(0,0,0,.06);margin:24px 0}
+    .sim-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:800px){.sim-grid{grid-template-columns:1fr}}
+    .sim-kpi{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .sim-kpi .k{flex:1 1 120px;background:#fafafa;border:1px dashed #e5e7eb;border-radius:16px;padding:10px}
+    .sim-kpi .k b{display:block;font-size:18px}
+    .sim-total{margin-top:12px;padding:14px;border:1px solid #efe7df;border-radius:12px;background:linear-gradient(135deg,#fff,#faf7f2)}
+    .sim-total .row{display:flex;justify-content:space-between;margin:6px 0}
+    .sim-total .grand{font-weight:700;font-size:20px}
+    .sim-actions{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+    .note{font-size:12px;color:#6b7280;margin-top:6px}
+    .warn{color:#991b1b;font-size:13px}
+    .consent-line{display:flex;align-items:flex-start;gap:8px}
+    .consent-line input[type="checkbox"]{margin-top:2px}
+
+    /* Campos arredondados locais + fix iOS + letra maior */
+    #simulador-precos label{font-size:16px}
+    .round-field{
+      width:100%;padding:12px 14px;border:1px solid #e5e7eb;border-radius:16px;background:#fff;
+      appearance:none;-webkit-appearance:none;-moz-appearance:textfield;
+      color:#111827;-webkit-text-fill-color:currentColor;font-size:16px;
+    }
+    input[type="date"].round-field{height:52px}
+    input[type="date"]::-webkit-date-and-time-value{text-align:left}
+
+    /* Spinners: maiores e alinhados dentro da caixa (mobile e desktop) */
+    .with-spinner{position:relative}
+    .with-spinner .spinner{
+      position:absolute; right:8px; top:6px; bottom:6px;
+      width:34px; display:flex; flex-direction:column; justify-content:center; gap:6px; pointer-events:auto;
+    }
+    .with-spinner .spinner button{
+      width:100%; height:22px; font-size:16px; line-height:1;
+      color:#8b5e34; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
+      display:flex; align-items:center; justify-content:center; cursor:pointer;
+    }
+    .with-spinner .spinner button:active{transform:translateY(1px)}
+  </style>
+</head>
+
+<body class="page-reservas">
+  <header class="topbar">
+    <div class="brand"><a href="../index.html"><img src="../images/logo.webp" alt="Quinta dos Avós Lourenço" class="logo"></a></div>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">☰</button>
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="../index.html">Início</a><a href="../sobre/index.html">Sobre</a><a href="../galeria/index.html">Galeria</a><a href="../contactos/index.html">Contactos</a><a href="index.html" class="active">Reservas</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 style="text-align:center">Reservas</h1>
+      <p style="text-align:center">Use o simulador para verificar o valor e enviar-nos o pedido.</p>
+
+      <section id="simulador-precos" class="simulador" aria-labelledby="sim-title">
+        <div class="sim-grid">
+          <div>
+            <label for="checkin">Check-in</label>
+            <input id="checkin" name="checkin" type="date" class="round-field">
+          </div>
+          <div>
+            <label for="checkout">Check-out</label>
+            <input id="checkout" name="checkout" type="date" class="round-field">
+          </div>
+
+          <!-- Adultos com setas e sem teclado -->
+          <div class="with-spinner">
+            <label for="adultos">Adultos</label>
+            <input id="adultos" name="adultos" type="number" min="1" max="7" value="2"
+                   class="round-field" readonly aria-readonly="true" style="padding-right:62px;caret-color:transparent;">
+            <div class="spinner">
+              <button type="button" class="spin-up"   data-target="adultos" aria-label="Mais adultos">▲</button>
+              <button type="button" class="spin-down" data-target="adultos" aria-label="Menos adultos">▼</button>
+            </div>
+          </div>
+
+          <!-- Crianças 0–4 com setas e sem teclado -->
+          <div class="with-spinner">
+            <label for="criancas">Crianças (0–4 anos)</label>
+            <input id="criancas" name="criancas" type="number" min="0" max="6" value="0"
+                   class="round-field" readonly aria-readonly="true" style="padding-right:62px;caret-color:transparent;">
+            <div class="spinner">
+              <button type="button" class="spin-up"   data-target="criancas" aria-label="Mais crianças">▲</button>
+              <button type="button" class="spin-down" data-target="criancas" aria-label="Menos crianças">▼</button>
+            </div>
+          </div>
+
+          <div>
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Lourenço" class="round-field">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="exemplo@gmail.com" class="round-field">
+          </div>
+          <div>
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" inputmode="tel" placeholder="+351 …" class="round-field">
+          </div>
+          <div>
+            <label for="alojamento">Tipo de alojamento</label>
+            <select id="alojamento" name="alojamento" class="round-field">
+              <option selected>Casa completa</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="note">
+          Regras: <strong>137€ / noite</strong> inclui <strong>1–2 adultos</strong> (pequeno-almoço).
+          Adultos extra: <strong>+35€ / adulto / noite</strong>. <strong>Crianças 0–4 anos: gratuito</strong>
+          (não acrescentam custo; >4 anos contam como adulto).
+          Mínimo <strong>2 noites</strong>, máximo <strong>30 noites</strong>, capacidade <strong>até 7 pessoas</strong> (adultos + crianças).
+        </p>
+
+        <div class="sim-kpi">
+          <div class="k"><b id="k-noites">0</b><span>noites</span></div>
+          <div class="k"><b id="k-nightly">137 €</b><span>preço / noite (total)</span></div>
+          <div class="k"><b id="k-grupo">2</b><span>pessoas (total)</span></div>
+        </div>
+
+        <div class="sim-total" id="sim-total">
+          <div class="row"><span>Noites</span><span id="bk-noites">0</span></div>
+          <div class="row"><span>Base (1–2 adultos)</span><span id="bk-base">137 € / noite</span></div>
+          <div class="row"><span>Adultos extra</span><span id="bk-extra">0 €</span></div>
+          <div class="row"><span>Crianças 0–4</span><span>Gratuito</span></div>
+          <div class="row"><span>Pequeno-almoço</span><span>Incluído</span></div>
+          <div class="row" style="border-top:1px dashed #e5e7eb;padding-top:8px;margin-top:8px">
+            <span class="grand">Total</span>
+            <span class="grand" id="bk-total">0 €</span>
+          </div>
+          <p id="sim-msg" class="warn" hidden></p>
+        </div>
+
+        <div class="sim-actions">
+          <label class="consent-line">
+            <input id="consent-terms" type="checkbox" required>
+            <span>Li e aceito os <a href="../termos-e-condicoes/index.html" target="_blank" rel="noopener">Termos e Condições</a>.</span>
+          </label>
+          <label class="consent-line">
+            <input id="consent-privacy" type="checkbox" required>
+            <span>Li e aceito a <a href="../politica-privacidade/index.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
+          </label>
+          <button id="sim-reservar" type="button" class="btn primary">Enviar Pedido</button>
+        </div>
+      </section>
+
+      <hr>
+      <h2 style="text-align:center">Outras formas de reservar</h2>
+      <p style="text-align:center">
+        <a href="https://www.airbnb.pt/rooms/875560493639889462" target="_blank" rel="noopener">Airbnb</a> ·
+        <a href="https://www.booking.com/hotel/pt/quinta-dos-avos-lourenco.pt-pt.html" target="_blank" rel="noopener">Booking</a> ·
+        <a href="https://wa.me/351960446713?text=Ol%C3%A1!%20Gostaria%20de%20saber%20disponibilidade." target="_blank" rel="noopener">WhatsApp</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023–2026 Quinta dos Avós Lourenço · 135447/AL ·
+      <a href="../politica-privacidade/index.html">Política de Privacidade</a> ·
+      <a href="../termos-e-condicoes/index.html">Termos e Condições</a> ·
+      <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer">Livro de Reclamações</a>
+    </p>
+  </footer>
+
+  <a href="https://wa.me/351960446713?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Quinta%20dos%20Avós%20Lourenço." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem no WhatsApp" title="Enviar mensagem no WhatsApp">
+    <img src="../images/whatsapp-icon.svg" alt="WhatsApp">
+  </a>
+
+  <div id="cookie-consent" class="cookie-banner" role="dialog" aria-live="polite" hidden>
+    <div class="cookie-inner">
+      <p class="cookie-text">Usamos cookies apenas para garantir o bom funcionamento do site. <a href="../cookies/index.html">Saiba mais</a></p>
+      <button id="cookie-accept" type="button" class="btn-accept">Aceitar</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script defer src="../js/cookies.js"></script>
+  <script defer src="../js/app.js"></script>
+  <script defer src="../js/reservas.js"></script>
+</body>
+</html>
